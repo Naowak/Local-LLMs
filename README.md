@@ -45,3 +45,10 @@ source venv/bin/activate
 ## Remarques Importantes
 - Ce projet ne prend pas en compte les systèmes Windows : l'installation de [llama_cpp_python](https://github.com/abetlen/llama-cpp-python) diffère quelque peu (voir la documentation de la bibliothèque). 
 - La performance et la compatibilité des modèles dépendent fortement de la configuration matérielle de l'utilisateur.
+
+
+## Option GUI
+
+Sinon, si vous préfèrez les interfaces, vous pouvez utilisez LMStudio. Un logiciel spécialement conçu pour l'utilisation des LLMs open-source quantifié présents sur Huggingface (fonctionne sur MacOS Silicon, Windows and Linux).
+
+[https://lmstudio.ai](LMStudio website)
