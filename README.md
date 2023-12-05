@@ -51,4 +51,4 @@ source venv/bin/activate
 
 Sinon, si vous préfèrez les interfaces, vous pouvez utilisez LMStudio. Un logiciel spécialement conçu pour l'utilisation des LLMs open-source quantifié présents sur Huggingface (fonctionne sur MacOS Silicon, Windows and Linux).
 
-[https://lmstudio.ai](LMStudio website)
+[LMStudio website](https://lmstudio.ai)
