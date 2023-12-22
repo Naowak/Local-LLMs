@@ -1,5 +1,4 @@
-
-mixtral*
+models/
 llama.cpp/
 
 # Byte-compiled / optimized / DLL files
