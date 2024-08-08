@@ -4,7 +4,7 @@ import requests
 import time
 import random
 
-NB_REQUESTS = [1, 2, 4, 8, 16, 32, 64]
+NB_REQUESTS = [128]
 
 text = """
 Bidirectional Encoder Representations from Transformers (BERT) is a language model based on the transformer architecture, notable for its dramatic improvement over previous state of the art models. It was introduced in October 2018 by researchers at Google.[1][2] A 2020 literature survey concluded that "in a little over a year, BERT has become a ubiquitous baseline in Natural Language Processing (NLP) experiments counting over 150 research publications analyzing and improving the model."[3]
@@ -57,10 +57,11 @@ A later paper proposes RoBERTa, which preserves BERT's architecture, but improve
 
 def fetch_url(i):
     begin = time.time()
-    response = requests.post("http://localhost:8000/v1/completions", json={"model": "MaziyarPanahi/WizardLM-2-8x22B-AWQ","prompt": text,"max_tokens": 100,"temperature": 0})
+    response = requests.post("http://localhost:8000/v1/completions", json={"model": "TechxGenus/Codestral-22B-v0.1-GPTQ","prompt": text,"max_tokens": 100,"temperature": 0})
     nb_tokens = response.json()['usage']['completion_tokens']
     nb_prompt = response.json()['usage']['prompt_tokens']
     answer = {'nb_tokens': nb_tokens, 'nb_prompt': nb_prompt, 'time': time.time() - begin}
+    print(answer)
     return answer
 
 async def main(nb):
